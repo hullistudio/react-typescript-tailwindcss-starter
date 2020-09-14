@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
  */
 const useCurrentUrl = () => {
   const { pathname, search } = useLocation();
+
   return {
     currentUrl: pathname + search,
     pathname,

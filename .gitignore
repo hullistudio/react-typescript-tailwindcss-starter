@@ -2,6 +2,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/react-app-env.d.ts
 
 # editors / ide
 /idea
