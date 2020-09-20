@@ -9,7 +9,7 @@ const useCurrentUrl = () => {
   return {
     currentUrl: pathname + search,
     pathname,
-    search,
+    search
   };
 };
 
