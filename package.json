@@ -10,7 +10,7 @@
     "url": "http://hulli.studio"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^26.0.13",
@@ -28,7 +28,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --write src/**/*.ts{,x}",
+    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,9 +59,9 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.1.1",
-    "@typescript-eslint/parser": "^4.1.1",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.1.2"
   }
