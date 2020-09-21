@@ -1,11 +1,11 @@
 module.exports = {
   bracketSpacing: true,
   jsxBracketSameLine: true,
-  trailingComma: 'none',
+  trailingComma: "none",
   singleQuote: false,
   printWidth: 80,
   useTabs: false,
-  arrowParens: 'avoid',
+  arrowParens: "avoid",
   tabWidth: 2,
-  'react/jsx-max-props-per-line': [1, { when: 'always' }]
+  "react/jsx-max-props-per-line": [1, { when: "always" }]
 };
