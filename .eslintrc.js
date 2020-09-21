@@ -10,6 +10,43 @@ module.exports = {
   settings: {
     react: {
       version: "detect" // Tells eslint-plugin-react to automatically detect the version of React to use
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      // use <root>/tsconfig.json
+      typescript: {
+        alwaysTryTypes: true // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+      },
+
+      // use <root>/path/to/folder/tsconfig.json
+      typescript: {
+        directory: "path/to/folder"
+      },
+
+      // Multiple tsconfigs (Useful for monorepos)
+
+      // use a glob pattern
+      typescript: {
+        directory: "packages/*/tsconfig.json"
+      },
+
+      // use an array
+      typescript: {
+        directory: [
+          "packages/module-a/tsconfig.json",
+          "packages/module-b/tsconfig.json"
+        ]
+      },
+
+      // use an array of glob patterns
+      typescript: {
+        directory: [
+          "packages/*/tsconfig.json",
+          "other-packages/*/tsconfig.json"
+        ]
+      }
     }
   },
   extends: [
@@ -20,13 +57,6 @@ module.exports = {
   ],
   rules: {
     semi: 0,
-    quotes: 0,
-    "import/no-unresolved": 0,
-    "import/named": 2,
-    "import/namespace": 2,
-    "import/default": 2,
-    "import/export": 2,
-    "react-hooks/rules-of-hooks": 2,
-    "react-hooks/exhaustive-deps": 1
+    quotes: 0
   }
 };
