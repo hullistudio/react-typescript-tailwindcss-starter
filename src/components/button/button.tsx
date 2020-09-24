@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 type ButtonProps = {
   icon?: string;
@@ -30,6 +31,18 @@ const Button = ({ icon, label, to, ...props }: ButtonProps) => {
       {icon} {label}
     </a>
   );
+};
+
+Button.propTypes = {
+  icon: PropTypes.string,
+  label: PropTypes.string,
+  to: PropTypes.string,
+  color: PropTypes.string,
+  variant: PropTypes.string,
+  size: PropTypes.string,
+  fullWidth: PropTypes.bool,
+  loading: PropTypes.bool,
+  disabled: PropTypes.bool
 };
 
 export default Button;
