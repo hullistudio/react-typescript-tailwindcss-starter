@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 type ButtonProps = {
   icon?: string;
-  label: string;
+  label?: string;
   to?: string;
   color?: string;
   variant?: string;
@@ -39,7 +39,7 @@ Button.propTypes = {
   to: PropTypes.string,
   color: PropTypes.string,
   variant: PropTypes.string,
-  size: PropTypes.string,
+  size: PropTypes.oneOf(["small", "medium", "large"]),
   fullWidth: PropTypes.bool,
   loading: PropTypes.bool,
   disabled: PropTypes.bool
