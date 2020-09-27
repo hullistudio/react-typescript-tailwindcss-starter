@@ -1,6 +1,8 @@
 import React from "react";
 import { Button } from "./components";
 
+import "./styles/index.css";
+
 const App = () => {
   return (
     <div className="App">
