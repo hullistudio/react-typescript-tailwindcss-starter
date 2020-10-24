@@ -45,4 +45,9 @@ Button.propTypes = {
   disabled: PropTypes.bool
 };
 
+Button.defaultProps = {
+  variant: "contained",
+  color: "primary"
+};
+
 export default Button;
