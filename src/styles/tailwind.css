@@ -22400,6 +22400,10 @@ code {
     monospace;
 }
 
+a {
+  cursor: pointer;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
