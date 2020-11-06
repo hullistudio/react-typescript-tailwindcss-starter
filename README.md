@@ -11,10 +11,6 @@
     <br />
   </h1>
   <sup>
-    <br />
-    <br />
-
-  <br />
 </div>
 
 ## Features
