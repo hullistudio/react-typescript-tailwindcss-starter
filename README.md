@@ -13,6 +13,8 @@
   <sup>
 </div>
 
+This boilerplate contains all you need to start your next React.js project. Simple, robust, well-organized, all you need to do is clone, install and you're ready to start.
+
 ## Features
 
 This boilerplate features all the latest tools and practices in the industry.
