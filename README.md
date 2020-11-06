@@ -15,14 +15,16 @@
     <br />
 
   <br />
-  <br />
-  <br />
-  <br />  <br />
-  <br />
-  <br />
-  <br />
-  <br />
 </div>
+
+## Quick start
+
+```shell
+git clone https://github.com/hullistudio/react-typescript-tailwindcss-starter <your-project-name>
+cd react-typescript-tailwindcss-starter/
+
+yarn start
+```
 
 <br />
 <br />
