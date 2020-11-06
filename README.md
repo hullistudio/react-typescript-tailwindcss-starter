@@ -17,14 +17,22 @@
   <br />
 </div>
 
-## Quick start
+## Features
 
-```shell
-git clone https://github.com/hullistudio/react-typescript-tailwindcss-starter <your-project-name>
-cd react-typescript-tailwindcss-starter/
+This boilerplate features all the latest tools and practices in the industry.
 
-yarn start
-```
+- ⚛ **React** — 16.13.1 with Hooks
+- 🛠 **Babel** — ES6 syntax, Airbnb & React/Recommended config
+- 🚀 **Webpack** — Hot Reloading, Code Splitting, Optimized Build
+- 💅 **CSS** — CSS, Sass, **Tailwind, PostCSS with Autoprefixer**
+- 💖 **Lint** — ESlint
+
+## Getting started
+
+1. Clone this repo using `https://github.com/hullistudio/react-typescript-tailwindcss-starter.git`
+2. Move to the appropriate directory: `cd react-typescript-tailwindcss-starter`.<br />
+3. Run `yarn` or `npm install` to install dependencies.<br />
+4. Run `npm start` to see the example app at `http://localhost:3000`.
 
 ## Links
 
