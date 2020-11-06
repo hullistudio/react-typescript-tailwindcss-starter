@@ -26,6 +26,12 @@ cd react-typescript-tailwindcss-starter/
 yarn start
 ```
 
+## Links
+
+- [React.js](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindui.com/)
+
 <br />
 <br />
 <br />
